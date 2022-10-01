@@ -458,6 +458,9 @@ a {
   }
 }
 @media screen and (max-width: 570px) {
+  .btn {
+    font-size: 1.4rem;
+  }
   .header {
     margin-bottom: 3.2rem;
   }
@@ -474,6 +477,9 @@ a {
   .services .container .apps,
 .services .container .ui-ux {
     grid-column: span 1;
+  }
+  .booking .container {
+    padding: 5rem 2.4rem;
   }
   .footer {
     margin-bottom: 0;
