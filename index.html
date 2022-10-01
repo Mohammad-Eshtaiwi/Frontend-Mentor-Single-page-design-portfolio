@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Single-page design portfolio</title>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <img src="./assets/logo.svg" alt="logo" class="logo">
+      <button class="btn btn--black">Free Consultation</button>
+    </div>
+  </header>
+  <main>
+    <section class="main_top">
+      <div class="container">
+        <h1 class="heading heading--l">Design solutions made easy</h1>
+        <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design
+          needs.
+        </p>
+      </div>
+    </section>
+    <article class="services">
+      <div class="container">
+        <section class="graphic-design"><img src="./assets/pattern-graphic-design.svg" alt="graphic design">
+          <h2>Graphic Design</h2>
+        </section>
+        <section class="ui-ux"><img src="./assets/pattern-ui-ux.svg" alt="ui-ux">
+          <h2>UI/UX</h2>
+        </section>
+        <section class="apps"><img src="./assets/pattern-apps.svg" alt="Apps">
+          <h2>Apps</h2>
+        </section>
+        <section class="photography"><img src="./assets/pattern-photography.svg" alt="photography">
+          <h2>photography</h2>
+        </section>
+        <section class="illustrations"><img src="./assets/pattern-illustrations.svg" alt="illustrations">
+          <h2>illustrations</h2>
+        </section>
+        <section class="motion-graphics"><img src="./assets/pattern-motion-graphics.svg" alt="Motion Graphics">
+          <h2>Motion Graphics</h2>
+        </section>
+      </div>
+    </article>
+    <article class="iAm">
+      <div class="container">
+        <figure>
+          <img src="./assets/image-amy.webp" alt="amy acting cute img">
+        </figure>
+        <section>
+          <h2 class="heading heading--m">I’m Amy, and I’d love to work on your next project</h2>
+          <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand
+            illustrations to complete mobile apps. I’m also handy with a camera!</p>
+          <button class="btn btn--red">Free Consultation</button>
+        </section>
+      </div>
+    </article>
+    <!-- Swiper -->
+    <section class="swiper my-work">
+      <h3 class="heading heading--s text-center">My Work</h3>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./assets/image-slide-1.jpg" alt="image-slide-1"></div>
+        <div class="swiper-slide"><img src="./assets/image-slide-2.jpg" alt="image-slide-2"></div>
+        <div class="swiper-slide"><img src="./assets/image-slide-3.jpg" alt="image-slide-3"></div>
+        <div class="swiper-slide"><img src="./assets/image-slide-4.jpg" alt="image-slide-4"></div>
+        <div class="swiper-slide"><img src="./assets/image-slide-5.jpg" alt="image-slide-5"></div>
+      </div>
+      <div class="my-work__controller">
+        <button class="btn btn--black  btn--arrow btn--arrow--left"><img src="./assets/icon-arrow-left.svg"
+            alt=" arrow left"></button>
+        <button class="btn btn--black btn--arrow btn--arrow--right"><img src="./assets/icon-arrow-right.svg"
+            alt=" arrow right"></button>
+      </div>
+    </section>
+    <section class="booking">
+      <div class="container">
+        <div class="details">
+          <h3 class="heading heading--m">Book a call with me</h3>
+          <p>I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project
+            during a free consultation. Then we can move forward from there.</p>
+        </div>
+        <button class="btn btn--red">Free Consultation</button>
+      </div>
+    </section>
+  </main>
+  <footer class="header footer">
+    <div class="container">
+      <img src="./assets/logo.svg" alt="logo" class="logo">
+      <button class="btn btn--black">Free Consultation</button>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".my-work", {
+    // slidesPerView: 3,
+    initialSlide: 2,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+
+    // },
+    navigation: {
+      nextEl: ".btn--arrow--right",
+      prevEl: ".btn--arrow--left",
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      // when window width is >= 640px
+      0: {
+        slidesPerView: 1.5,
+      },
+      950: {
+        slidesPerView: 3,
+      }
+    }
+  });
+</script>
+
+
+</html>
